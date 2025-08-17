@@ -12,12 +12,4 @@ def getAllFlightsStatus(filename):
     df.drop('date_time', inplace=True, axis=1)
     return df
 
-if __name__ == "__main__":
-    import sys
-    if len(sys.argv) < 2:
-        print("No file path is provided")
-        sys.exit(1)
-    print(sys.argv)
-    flights = getAllFlightsStatus(sys.argv[1])
-    for f in flights:
-        print(f)
+display(getAllFlightsStatus("Data Engineer_Assessment_Data Set_Flight Leg.xlsx"))
