@@ -12,5 +12,4 @@ def getAllFlightsStatus(filename):
     df.drop('date_time', inplace=True, axis=1)
     return df
 
-
 display(getAllFlightsStatus("Data Engineer_Assessment_Data Set_Flight Leg.xlsx"))
