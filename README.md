@@ -44,7 +44,7 @@ Approach 1 : (Time complexity O(NlogN))
 From 8th line, using pandas package, read the data from xlsx into a data frame. Add an extra column (date_time) which is a combination of flight_dt and lastupdt cloumns time and converted it to datetime object. Sorted all the data by date_time in descending order. By using the fight key, drop duplicates by keeping the first record. And the drop the newly created date_time column, return and display the data frame. 
 
 Approach 2 : (Time complexity O(N))
-From 8th line, using pandas package imported the data into a dataframe and iterated to those records and inserted into a dictionary with key as flightKey and value as FlightDetails object.
+Using pandas package imported the data into a dataframe and iterated to those records and inserted into a dictionary with key as flightKey and value as FlightDetails object.
 While iterating, If a new record comes in, we insert into the dictionary.If an existing record comes in, then the flight datetime will be compared with prev datetime. If current datetime is greater, then replace the dictionary with current flight details for the same flightkey.
 At the end of iteration, take all the dict values as list, print and also return the same.
 
