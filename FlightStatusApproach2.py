@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[8]:
-
-
 import pandas as pd
 from datetime import datetime
 
@@ -64,19 +58,4 @@ def getAllFlightsStatus(fileName):
 
     return list(mydict.values())
 
-if __name__ == "__main__":
-    import sys
-    if len(sys.argv) < 2:
-        print("No file path is provided")
-        sys.exit(1)
-    print(sys.argv)
-    flights = getAllFlightsStatus(sys.argv[1])
-    for f in flights:
-        print(f)
-
-
-# In[ ]:
-
-
-
-
+display(getAllFlightsStatus("Data Engineer_Assessment_Data Set_Flight Leg.xlsx"))
